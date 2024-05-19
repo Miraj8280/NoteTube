@@ -3,6 +3,7 @@ import { Box, Input, FormLabel, Heading, useDisclosure } from '@chakra-ui/react'
 import VideoPlayer from '../components/VideoPlayer';
 import NoteContainer from '../components/NoteContainer';
 import AddNotes from '../components/AddNotes';
+import Footer from '../components/Footer';
 
 export default function Home() {
   const [videoId, setVideoId] = useState('1H_3akZopkg');
@@ -126,6 +127,8 @@ export default function Home() {
         onNoteChange={setCurrentNote}
         handleAddNote={handleAddNote}
       />
+
+      <Footer />
     </Box>
   );
 }
