@@ -41,7 +41,7 @@ export default function NoteContainer({
   };
 
   return (
-    <Card p={5} mt="1rem">
+    <Card p={5} width="70%">
       <CardHeader>
         <Flex justifyContent="space-between" alignItems="center">
           <Box>

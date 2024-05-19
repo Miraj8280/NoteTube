@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { Box, Input, FormLabel, useDisclosure } from '@chakra-ui/react';
+import { Box, Input, FormLabel, Heading, useDisclosure } from '@chakra-ui/react';
 import VideoPlayer from '../components/VideoPlayer';
 import NoteContainer from '../components/NoteContainer';
 import AddNotes from '../components/AddNotes';
@@ -87,19 +87,23 @@ export default function Home() {
   };
 
   return (
-    <Box p={5}>
-      <FormLabel>
-        Enter YouTube video ID:
-        <Input
-          placeholder="Enter YouTube video ID"
-          value={videoId}
-          onChange={handleVideoChange}
-          mb={4}
-        />
-      </FormLabel>
+    <Box p={5} display="flex" flexDirection="column" justifyContent="center" alignItems="center">
+      <Heading mb={4} size="lg" width="70%">
+        NoteTube: Video Player with Notes
+      </Heading>
 
       {/* Video player component */}
       <VideoPlayer videoId={videoId} playerRef={playerRef} />
+
+      <FormLabel width="70%">
+        Enter YouTube Video ID:
+        <Input
+          placeholder="Enter YouTube Video ID"
+          value={videoId}
+          onChange={handleVideoChange}
+          mb={2}
+        />
+      </FormLabel>
 
       {/* NoteContainer component */}
       <NoteContainer
