@@ -4,7 +4,7 @@ NoteTube is a responsive video player application built with React.js using Vite
 
 ![Screenshot](./public/notetube-screenshot.png)
 
-### [Live Preview]()
+### [Live Preview](https://notetube.vercel.app/)
 
 
 ## Features
@@ -31,8 +31,9 @@ NoteTube is a responsive video player application built with React.js using Vite
 ## Tech Stack
 - React.js
 - Vite
-- Chakra UI
+- Tailwind CSS
 - React-youtube
+- Chakra UI
 
 ## Installation
 
